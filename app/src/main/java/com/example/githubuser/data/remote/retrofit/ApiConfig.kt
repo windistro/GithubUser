@@ -11,7 +11,7 @@ class ApiConfig {
             val authInterceptor = Interceptor { chain ->
                 val req = chain.request()
                 val requestHeaders = req.newBuilder()
-                    .addHeader("Authorization", "token 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")
+                    .addHeader("Authorization", "token [your github API]")
                     .build()
                 chain.proceed(requestHeaders)
             }
